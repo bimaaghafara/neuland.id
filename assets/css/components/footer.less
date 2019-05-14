@@ -1,0 +1,136 @@
+/**
+ * Footer 
+ **/
+
+.footer{
+	text-align: center;
+	background-color: black;
+	color: @color-white;
+	font-size: 1rem;
+	@media screen and (min-width: @sm){
+		font-size: 1.3rem;
+	}
+
+	a{
+		color: @color-white; 
+		text-decoration: none;
+	}
+	.top{
+		padding: 20px 0px 0px 0px;
+		text-transform: uppercase;
+		font-family: 'futurastd-book', sans-serif;
+		@media screen and (min-width: @sm){
+			padding-top: 8%;
+		}
+
+		a:hover{
+			color: red;
+			text-decoration: underline;
+		}
+		.mid{
+			border-left: solid 1px @color-white;
+			border-right: solid 1px @color-white;
+		}
+		div{padding: 10px;}
+		
+		.footer-menu-list{
+			list-style:none;
+			padding-left:0;
+
+			li{
+				padding-top: 7px;
+				padding-bottom: 7px;
+				font-size: 12px;
+
+				@media screen and (min-width: @sm) {
+					padding-right: 4px;
+					padding-left: 4px;
+					display: inline-block;
+				}
+
+				@media screen and (min-width: @md){
+					display: inline;
+					padding-left: 2%;
+					padding-right: 2%;
+					font-size: 14px;
+
+					&:first-child{
+						padding-left: 0;
+					}
+					&:last-child{
+						padding-right: 0;
+					}
+				}
+			}
+
+			a {
+				transition: color 0.1s ease-in;
+			}
+
+			a:hover,
+			a:active,
+			a:focus {
+				text-decoration: none;
+			}
+
+			&.neu-before-login{
+				margin-top: 10px;
+				li{
+					display: inline;
+					padding:0;
+					padding-left: 2%;
+					padding-right: 2%;
+					border-left:1px solid #fff;
+					border-right: 1px solid #fff;
+
+					&:first-child{
+						border: none;
+					}
+					&:last-child{
+						border: none;
+					}
+					@media screen and (min-width: @sm){
+						padding-left: 10%;
+						padding-right: 10%;						
+					}
+				}
+			}
+		}
+		
+	}
+	.bottom{
+		font-family: 'WorkSans-Regular', Arial, sans-serif;
+		font-size: 1.2rem;
+		padding:20px 0;
+		color: #999394;
+
+		@media screen and (min-width: @sm){
+			padding-bottom: 8%;
+			padding-top: 8%;
+		}
+
+		&.neu-before-login{
+			text-align: left;
+		}
+
+		&.neu-after-login{
+			text-align: left;
+			img{
+				padding-top:14px;
+			}
+		}
+
+		p {
+			@media screen and (min-width: @sm){
+				font-size:13px;
+				padding-left: 30px;
+				padding-right: 60px;
+			}
+
+
+			@media screen and (min-width: @md){
+				font-size: 15px;
+			}
+		}
+	}
+}

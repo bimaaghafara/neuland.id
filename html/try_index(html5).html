@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neuland.id </title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+<style>
+
+.video-slider-wrapper-player{
+	position: relative;
+}
+
+video{ margin-bottom: -5px;}
+
+.progressTime{
+	position: absolute;
+	transform: translate(-50%, 0);
+	left:50%;
+	bottom:5%;
+	width: 95%;
+}
+.progressBar{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background-color: #666;
+}
+.timeBar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #c12;
+}
+.duration{
+	float:right;
+}
+
+</style>
+
+</head>
+
+
+
+<body id="landing" >
+	<!-- header start-->
+	<header class="header">
+	 	<!-- navigation start-->
+	 	<nav class="navbar">
+			<!-- <div class="container-fluid"> -->
+			<!-- <div class="container"> -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand visible-xs" href="index.html">NEULAND</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Challenge <span class="caret"></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Sound</a></li>
+									<li><a href="#">Vision</a></li>
+									<li><a href="#">Taste</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Neuland</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Local Giants <span class="caret"></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Kimo Rizky</a></li>
+									<li><a href="#">Isha Hening</a></li>
+									<li><a href="#">Adrian Ishak</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			<!-- </div> -->
+			<!-- </div> -->
+		</nav>
+		<!-- navigation end -->
+	</header>
+	<!-- header end-->
+
+	<!-- content start -->
+	<div class="content">
+		<!--<div class="neu-video-wrapper">
+			<iframe width="100%" height="270" src="https://www.youtube.com/embed/65vA_PUyPwk" frameborder="0" allowfullscreen></iframe>	
+		</div>-->
+
+		<div class="slick-top-container">
+			<div class="video-slider">
+				<div class="video-slider-wrapper" data-text="Sinopsis" id="video-1">
+					<a href="javascript:void(0)" class="btn-play-video" data-video="../assets/video/aw.mp4" data-id="video-1">Play Now</a>
+					<img src="http://lorempixel.com/g/600/350/nightlife/1" class="video-slider-wrapper-cover">
+					<div class="video-slider-wrapper-player"></div>
+				</div>
+				<div class="video-slider-wrapper" data-text="Sinopsis" id="video-2">
+					<a href="javascript:void(0)" class="btn-play-video" data-video="../assets/video/aw.mp4" data-id="video-2">Play Now</a>
+					<img src="http://lorempixel.com/g/600/350/nightlife/2" class="video-slider-wrapper-cover">
+					<div class="video-slider-wrapper-player"></div>
+				</div>
+				<div class="video-slider-wrapper" data-text="Sinopsis" id="video-3">
+					<a href="javascript:void(0)" class="btn-play-video" data-video="../assets/video/aw.mp4" data-id="video-3">Play Now</a>
+					<img src="http://lorempixel.com/g/600/350/nightlife/3" class="video-slider-wrapper-cover">
+					<div class="video-slider-wrapper-player"></div>
+				</div>
+				<div class="video-slider-wrapper" data-text="Sinopsis" id="video-4">
+					<a href="javascript:void(0)" class="btn-play-video" data-video="../assets/video/aw.mp4" data-id="video-4">Play Now</a>
+					<img src="http://lorempixel.com/g/600/350/nightlife/4" class="video-slider-wrapper-cover">
+					<div class="video-slider-wrapper-player"></div>
+				</div>
+				
+			</div>
+			<div class="neulandIs">
+				Neuland is a place where decisions paid off. It is meant for people who have made decisions, went beyond their limit. <br><br>
+			</div>
+			<button class="btn btn-default btn-lg prev">
+				<span class="glyphicon glyphicon-menu-left"></span>
+			</button>
+			<button class="btn btn-default btn-lg next pull-right">
+				<span class="glyphicon glyphicon-menu-right"></span>
+			</buttton>
+		</div>
+		
+
+		<div class="whatIsNeuland">
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#neulandDesc">
+				WHAT IS NEULAND? 
+				<span class="glyphicon glyphicon-plus"></span>
+			</button>
+			<div id="neulandDesc" class="collapse">
+				<div class="neu-neuland-desc-inner" style="padding:20px;">
+					Neuland is Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="dwp-banner">
+			<img src="img/landing/dwp-banner.png">
+		</div> -->
+		<div class="localGiants">
+			<h4 class="title">meet our local giants</h4>
+			<div class="slick-center">
+				<div class="slick-wrapper">
+					<div class="plus"><a href="#"><span class="glyphicon glyphicon-plus"></span></a></div>
+					<img src="../assets/img/landing/localGiants1.png">
+					<div class="slick-text-box">
+						<h3>kimo rizky</h3>
+						<h6>sound</h6>
+						<a href="profile_before_login.html" class="btn btn-default btn-neu-readmore">
+							<div class="left">Read More</div>
+							<div class="right"><span class="glyphicon glyphicon-menu-right"></span></div>
+						</a>
+					</div>
+				</div>
+				<div class="slick-wrapper">
+					<div class="plus"><a href="#"><span class="glyphicon glyphicon-plus"></span></a></div>
+					<img src="../assets/img/landing/localGiants1.png">
+					<div class="slick-text-box">
+						<h3>adrian ishak</h3>
+						<h6>taste</h6>
+						<a href="profile_before_login.html" class="btn btn-default btn-neu-readmore">
+							<div class="left">Read More</div>
+							<div class="right"><span class="glyphicon glyphicon-menu-right"></span></div>
+						</a>
+					</div>
+				</div>
+				<div class="slick-wrapper">
+					<div class="plus"><a href="#"><span class="glyphicon glyphicon-plus"></span></a></div>
+					<img src="../assets/img/landing/localGiants1.png">
+					<div class="slick-text-box">
+						<h3>isha hening</h3>
+						<h6>vision</h6>
+						<a href="profile_before_login.html" class="btn btn-default btn-neu-readmore">
+							<div class="left">Read More</div>
+							<div class="right"><span class="glyphicon glyphicon-menu-right"></span></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="projectResult">
+			<div class="in"><b>project result</b></div>
+		</div>
+	
+		<div class="neu-join-challenge-wrapper">
+			<div class="joinChallenge">
+				<h2 class="title">join the challenge</h2>
+				<h6 class="subTitle">Lorem ipsum is simply dummy text of the <br>printing and typesetting industry, <br> <a href="#"><b>click here</b></a> to find out more</h6>
+				<div class="challenge-switch">
+					<div class="challenge-switch-wrap">
+						<div class="challenge-item left" data-position="left">
+							<div class="circle-item">
+								<div class="circle-item-in" style="background-image: url('../assets/img/home/caraouselBanner.png');">
+									<div class="circle-item-in-mid">
+										<h4>Vision</h4>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="challenge-item center" data-position="center">
+							<div class="circle-item">
+								<div class="circle-item-in" style="background-image: url('../assets/img/profile/profile-project-desc-img.png');">
+									<div class="circle-item-in-mid" >
+										<h4>Sound</h4>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="challenge-item right" data-position="right">
+							<div class="circle-item">
+								<div class="circle-item-in" style="background-image: url('../assets/img/landing/video.png');">
+									<div class="circle-item-in-mid">
+										<h4>Taste</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h5> submit your tones & get <br> collaboration with kimo rizky!</h5>
+			</div>
+		</div>
+
+		<!-- <div class="neu-join-challenge-wrapper">
+			<div class="joinChallenge">
+				<h2 class="title">join the challenge</h2>
+				<h6 class="subTitle">Lorem ipsum is simply dummy text of the <br>printing and typesetting industry, <br> <a href="#"><b>click here</b></a> to find out more</h6>
+				<div class="circleFotoOut">
+					<div class="circleFotoIn">
+						<img class="img-responsive center-block" src="img/landing/circle2Foto.png">
+					</div>
+					<img class="visionButton" src="img/landing/visionButton.png">
+					<img class="soundButton" src="img/landing/soundButton.png">
+					<img class="tasteButton" src="img/landing/tasteButton.png">
+				</div>
+				<h5> submit your tones & get <br> collaboration with kimo rizky!</h5>
+			</div>
+		</div> -->
+
+	</div>
+	<!-- content end -->
+
+
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row top">
+				<div class="col-xs-5 left">
+					<a href="#">Syarat & Ketentuan</a>
+				</div>
+				<div class="col-xs-3 mid">
+					<a data-toggle="modal" data-target="#modal-login" onclick="$('#login-body').show();$('#register-body-1').hide();$('#register-body-2').hide();  $('.modal-header .right').removeClass('active'); $('.modal-header .left').addClass('active');">Login </a>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="modal-login" role="dialog">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header">
+								<a onclick="$('#login-body').show();$('#register-body-1').hide();$('#register-body-2').hide();  $('.modal-header .right').removeClass('active'); $('.modal-header .left').addClass('active');" class="modal-title left">LOG IN</a>
+								<span class="divider">|</span>
+								<a onclick="$('#register-body-1').show();$('#login-body').hide();$('#register-body-2').hide();  $('.modal-header .left').removeClass('active'); $('.modal-header .right').addClass('active');" class="modal-title right">REGISTER</a>
+							</div>
+							<div id="login-body" class="modal-body">
+								<form>
+									<div class="form-group first">
+									  <input type="text" class="form-control" id="email" placeholder="EMAIL / USERNAME" name="email" required>
+									</div>
+									<div class="form-group last">
+									  <input type="password" class="form-control" id="pwd" placeholder="PASSWORD" name="pwd" required>
+									</div>
+									<button type="submit" class="btn btn-default">SIGN IN</button>
+									<a href="#">Forgot your password</a>
+								</form>
+							</div>
+							<div id="register-body-1" class="modal-body" style="display :none;">
+								<form>
+									<div class="form-group first">
+									  <input type="text" class="form-control" id="email" placeholder="EMAIL / USERNAME" name="email" required>
+									</div>
+									<div class="form-group first">
+									  <input type="password" class="form-control" id="pwd" placeholder="PASSWORD" name="pwd" required>
+									</div>
+									<div class="form-group first">
+									  <input type="password" class="form-control" id="confirm-pwd" placeholder="CONFIRM PASSWORD" name="confirm-pwd" required>
+									</div>
+									<div class="form-group first">
+									  <input type="text" class="form-control" id="full-name" placeholder="FULL NAME" name="full-name" required>
+									</div>
+									<div class="form-group first">
+										<span class="gender">GENDER</span>
+										<label class="radio-inline"><input type="radio" name="optradio">MALE</label>
+										<label class="radio-inline"><input type="radio" name="optradio">FEMALE</label>
+									</div>
+									<div class="form-group first">
+										<span class="dob">DATE OF BIRTH</span>
+										<select class="form-control" id="date">
+											<option value="" disabled selected>DD</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+										<select class="form-control" id="month">
+											<option value="" disabled selected>MM</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+										<select class="form-control" id="year">
+											<option value="" disabled selected>YYYY</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+									<div class="form-group first">
+									  <input type="text" class="form-control" id="idn-number" placeholder="IDENTITY NUMBER" name="idn-number" required>
+									</div>
+									<div class="form-group first">
+									  <input type="text" class="form-control" id="addr" placeholder="ADDRESS" name="addr">
+									</div>
+									<div><input type="radio" style="float:left">
+									<label style="display: block; margin-left: 30px; text-align:left;">Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</label><br></div>
+									<a onclick="$('#register-body-2').show();$('#register-body-1').hide();" class="btn btn-default" style="text-decoration:none; color: #000;">NEXT</a>
+									<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+
+								</form>
+								<div> STEP <span class="step-active">1</span> / 2 </div>
+							</div>
+							
+							<div id="register-body-2" class="modal-body" style="display :none;">
+								<form>
+									<div class="form-group">
+										<p class="refer" style="text-align: left">Are You Referred By A Friend? Input Your Friend's neuland Voucher ID Here (Optional)</p>
+										<label class="radio-inline" style="float:left"><input type="radio" name="referral">BY EMAIL</label>
+										<label class="radio-inline"><input type="radio" name="referral">BY VOUCHER ID</label>
+									</div>
+									<div class="form-group">
+										<p class="refer" style="text-align: left">Choose your interest</p>
+										<input type="radio" style="float:left" name="interest">
+										<label style="display: block; margin-left: 30px; text-align:left;">Music</label><br>
+										<input type="radio" style="float:left" name="interest">
+										<label style="display: block; margin-left: 30px; text-align:left;">Photography</label><br>
+										<input type="radio" style="float:left" name="interest">
+										<label style="display: block; margin-left: 30px; text-align:left;">Visual art</label><br>
+										<input type="radio" style="float:left" name="interest">
+										<label style="display: block; margin-left: 30px; text-align:left;">Taste</label><br>
+									</div>
+									<div>
+										<input type="radio" style="float:left">
+										<label style="display: block; margin-left: 30px; text-align:left; text-transform: capitalize">Yes, I Am An Adult Smoker Over 18 Years Old.</label>
+									</div>
+									<div>
+										<input type="radio" style="float:left">
+										<label style="display: block; margin-left: 30px; text-align:left; text-transform: capitalize">Yes, I Agree To Terms & Conditions</label><br>
+									</div>
+									
+									<button type="submit" class="btn btn-default">SIGN UP</button>
+									<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+								</form>
+								<div> STEP 1 / <span class="step-active">2</span> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<a id="#register-footer" data-toggle="modal" data-target="#modal-login" onclick="$('#register-body-1').show();$('#login-body').hide();$('#register-body-2').hide();  $('.modal-header .left').removeClass('active'); $('.modal-header .right').addClass('active');">Register </a>
+				</div>
+			</div>
+			<div class="row bottom">
+				<p>
+					Jika anda sudah terdaftar dan diverifikasi untuk merek lain dibawah PT HM Sampoerna Tbk. <br> Anda dapat menggunakan detail login anda untuk mengakses situs ini. Untuk pertanyaan dan menghubungi kami, <br> anda dapat mengirimkan email ke info@move.co.id. NFORMASI DALAM WEBSITE INI DITUJUKAN  <br> UNTUK PEROKOK BERUSIA 18 TAHUN ATAU LEBIH DAN TINGGAL DI WILAYAH INDONESIA.
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+	<!--<script src="../assets/js/script.js"></script>-->
+	<script>
+		
+		function secondsTimeSpanToHMS(s) {
+				s= parseInt(s);
+				var h = Math.floor(s/3600); //Get whole hours
+				s -= h*3600;
+				var m = Math.floor(s/60); //Get remaining minutes
+				s -= m*60;
+				return h+":"+(m < 10 ? '0'+m : m)+":"+(s < 10 ? '0'+s : s);
+		}
+
+		function videoControls(x){
+
+			var video = $(x+' .video');
+
+			//play & pause video on click
+			video.click(function(){this.paused?this.play():this.pause();});
+
+			// //get HTML5 video time duration
+			// video.on('loadedmetadata', function() {
+			// 		$(x+' .duration').text(secondsTimeSpanToHMS(video[0].duration));
+			// });
+		
+			//update HTML5 video current play time
+			video.on('timeupdate', function() {
+				var currentPos = video[0].currentTime; //Get currenttime
+					var maxduration = video[0].duration; //Get video duration
+					var percentage = 100 * currentPos / maxduration; //in %
+					$(x+' .timeBar').css('width', percentage+'%');
+					$(x+' .duration').text(secondsTimeSpanToHMS(video[0].duration));
+					$(x+' .current').text(secondsTimeSpanToHMS(video[0].currentTime));
+			});
+		}
+
+		$(document).ready(function(){
+			if( $('iframe').length != 0 ){
+				var $src=$('iframe').attr('src')+'?showinfo=0&rel=0';
+				//console.log($src);
+				$("iframe").attr("src",$src);
+			}
+			
+			if( $('.slick-center').length != 0 ){
+				//slick-top-container
+				jQuery('.video-slider').slick({
+					infinite: true,
+					prevArrow: $('.prev'),
+					nextArrow: $('.next'),
+				});
+
+				// On before slide change
+				jQuery('.video-slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+					console.log(nextSlide);
+					var $current = jQuery('.slick-current');
+					$current.find('.video-slider-wrapper-player').hide().empty();
+					$current.find('.video-slider-wrapper-cover').fadeIn();
+					jQuery('.video-slider').find('.btn-play-video').show();
+					jQuery('.slick-top-container').find('.neulandIs').show();
+					jQuery('.video-slider').slick('slickPlay');
+					$('.video-slider').css("margin-bottom", "0");
+				});
+
+				jQuery('.btn-play-video').on('click', function (e) {
+					console.log("BTN PLAY VIDEO STARTED");
+					var $id = jQuery(this).attr('data-id');
+					var $video = jQuery(this).attr('data-video');
+					console.log("VIDEO ID: " + $id);
+					console.log("VIDEO ACTIVE: " + $video);
+
+					jQuery('.video-slider').find('.btn-play-video').hide();
+					jQuery('.slick-top-container').find('.neulandIs').hide();
+					jQuery('#' + $id).find('.video-slider-wrapper-cover').hide();
+					jQuery('#' + $id).find('.video-slider-wrapper-player').empty()
+						.html('<video width="100%" class="video" autoplay>'
+								+'<source src="'+$video+'" type="video/mp4">'
+								+'Your browser does not support HTML5 video.'
+							+'</video>'
+							+'<div class="progressTime"><span class="current"></span><span class="duration"></span></div>'	
+							+'<div class="progressBar"><div class="timeBar"></div></div>')
+						.fadeIn();
+					console.log(jQuery('.asdfg').attr('src'));	
+					jQuery('.video-slider').slick('slickPause');
+					$('.video-slider').css("margin-bottom", "-1.5vw");
+					videoControls('#'+$id);
+				});
+			}
+
+			// window.onload = function(){
+			//  	$('.neu-video-wrapper').addClass('loaded');
+			//  	setTimeout( function(){
+			//  		$('.neu-video-wrapper').removeClass('loaded');
+			//  	}, 1000);
+			// }
+
+			//slider-top
+			if( $( '.slick-top').length != 0 ){
+				$('.slick-top').slick({
+					prevArrow: $('.prev'),
+					nextArrow: $('.next'),
+				});	
+				$(".slick-top").on('afterChange', function(event, slick, currentSlide){
+					$( "#play-button" ).show();
+					var i=parseInt($('.slick-slide.slick-current.slick-active').attr('data-slick-index'));
+					iPlay=i;
+					prevVid=i-1;
+					nextVid=i+1;
+					if(prevVid<0){prevVid=sumVideo}
+					if(nextVid>sumVideo){nextVid=0;}
+					if(player[prevVid].getPlayerState()==1){ player[prevVid].pauseVideo();}
+					if(player[nextVid].getPlayerState()==1){ player[nextVid].pauseVideo();}
+					// console.log("currentindex",$('.slick-slide.slick-current.slick-active').attr('data-slick-index'));
+					// console.log("status",player[i].getPlayerState());
+					// console.log("next",nextVid);
+					// console.log("prev",prevVid);
+				});
+			}
+			
+			var iPlay=0;
+			$( "#play-button" ).click(function() {
+				player[iPlay].playVideo();
+				$( "#play-button" ).hide();
+			});
+
+			//tab
+			$('.collapse')
+				.on('shown.bs.collapse', function(){
+					$(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");})
+				.on('shown.bs.collapse', function(){
+					$(this).parent().find(".panel-heading").addClass("active");})
+				.on('hidden.bs.collapse', function(){
+					$(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");})
+				.on('hidden.bs.collapse', function(){
+					$(this).parent().find(".panel-heading").removeClass("active");});
+
+			if( $('.challenge-switch-wrap').length != 0 ){
+
+				function neuSwitchChallenge(){
+					$('.challenge-item').css( 'height',   $('.challenge-item.center').width() + 'px' );
+					var centerWrap, centerCircle, leftWrap, leftCircle, rightWrap, rightCircle;
+					centerWrap = $( '.challenge-item.center' );
+					leftWrap = $('.challenge-item.left');
+					rightWrap = $('.challenge-item.right');
+
+					$('body').on('click', '.circle-item-in-mid', function(){
+						var dataPost = $(this).parent().parent().parent().data('position');
+						console.log( dataPost );
+						centerCircle = $('.challenge-item.center .circle-item');
+						
+						if( 'left' == dataPost ){
+							leftCircle = $(this).parent().parent();
+							console.log( leftCircle.offset() );
+							$(this).parent().parent().parent().hide().fadeIn().html(centerCircle);
+							$('.challenge-item.center').hide().fadeIn().html(leftCircle);
+						}
+						if( 'right' == dataPost ){
+							rightCircle = $(this).parent().parent();
+							console.log( rightCircle.offset() );
+							$(this).parent().parent().parent().hide().fadeIn().html(centerCircle);
+							$('.challenge-item.center').hide().fadeIn().html(rightCircle);
+						}
+					})
+
+				}
+
+				neuSwitchChallenge();
+
+				$(window).on('resize', function(){
+					$('.challenge-item').css( 'height',   $('.challenge-item.center').width() + 'px' );
+				})
+
+			}
+
+			if( $('.description_textarea').length != 0 ){
+				/*
+				* display count character type in textarea description
+				*/
+				function CharTextarea(){
+					var maxChar = 350;
+					var textAreaDesc = $('.description_textarea');
+					var lengthLeft = $('.length-left');
+
+					lengthLeft.html( textAreaDesc.val().length );
+					
+					textAreaDesc.on('keyup', function(){
+						if( $(this).val().length > maxChar ){
+							return false;
+						}
+						lengthLeft.html( $(this).val().length );
+					})
+				}
+				CharTextarea();
+			}
+			
+			if( $('.content-cover-image').length != 0 ){
+				$('.content-cover-image').change( function(){
+					readURLimg( this, $('.content-cover-image').index(this) );
+				})
+
+				/*
+				* readURLimg
+				* read url of input file image
+				* for previewing image 
+				*/
+				function readURLimg( input, eq ){
+					// console.log( eq );
+					if( input.files && input.files[0]){
+						var reader = new FileReader();
+
+						reader.onload = function(e){
+							$('.neu-upload-cover-image img.img-cover-preview').eq(eq).attr('src', e.target.result );
+							
+							// $('.cm-upload-del').eq(eq).show();
+							// $('.cm-uploader label').eq(eq).hide();
+							// $('.cm-preview-wrapper').eq(eq).css('min-height', 100+'px');
+							// $('.cm-preview-wrapper').eq(eq).css('height', 100+'px');
+						}
+						reader.readAsDataURL( input.files[0] );
+					}
+				}
+			}
+			
+			//slider
+			//slider-center
+			if( $('.slick-center').length != 0 ){
+				$('.slick-center').slick({
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 1,
+					dots: true,
+					arrow: false
+				})	
+			}
+
+		});
+	</script>
+	
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+.page__footer {
+	.page-header {
+		border-bottom: none;
+		margin-top: 5em;
+
+		@media screen and (min-width: @sm){
+			margin-top: 6.5em;
+		}
+
+		@media screen and (min-width: @md){
+			margin-top: 8em;
+		}
+	}
+
+	.page-title {
+		font-family: 'futurastd-book', sans-serif;
+		letter-spacing: 0.1em;
+		text-align: center;
+
+		position: relative;
+		padding-bottom: 1.6em;
+		font-size: 1.8rem;
+
+		@media screen and (min-width: @sm){
+			font-size: 2.1rem;
+		}
+
+		@media screen and (min-width: @md){
+			font-size: 2.3rem;
+		}
+
+		@media screen and (min-width: @lg){
+			font-size: 2.5rem;
+		}
+		
+		&:after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: ~"calc(50% - 45px)";
+			width: 90px;
+			height: 3px;
+			background: #000;
+		}
+	}
+
+	.sub-title {
+		font-family: 'futurastd-book', sans-serif;
+		letter-spacing: 0.03em;
+		margin-bottom: 1.4em;
+		color: #393939;
+		font-size: 1.2em;
+		line-height: 1.6;
+		text-align: left;
+
+		@media screen and (min-width: @sm){
+			font-size: 1.3em;
+		}
+
+		@media screen and (min-width: @md){
+			font-size: 1.3em;
+		}
+	}
+
+	.sub-title.text-center {
+		text-align: center;
+	}
+
+	.sub-title__answer {
+		position: relative;
+		font-size: 1.1em;
+		margin-bottom: 0.5em;
+		outline: none;
+
+		&:before {
+			display: block; 
+		 	content: " "; 
+		  	height: 70px;      /* Give height of your fixed element */
+	        margin-top: -70px; /* Give negative margin of your fixed element */  	
+	        visibility: hidden; 
+	        z-index: 0;
+		}
+	}
+
+	.page-content {
+		font-family: 'WorkSans-Regular', Arial, sans-serif;
+		text-align: justify;
+		line-height: 1.5;
+		margin-bottom: 7em;
+
+
+		@media screen and (min-width: @sm){
+			margin-bottom: 9em;
+		}
+
+		@media screen and (min-width: @md){
+			margin-bottom: 11em;
+		}
+
+		@media screen and (min-width: @lg){
+			margin-bottom: 14em;
+		}
+		
+	}
+
+	.page-content p {
+		margin-bottom: 2.6em;
+		color: #4e4e4e;
+		line-height: 1.8em;
+	}
+
+	.page-content ol,
+	.page-content ul {
+		padding-left: 1.3em;
+	}
+
+	.page-content li {
+		line-height: 1.8em;
+	}
+
+	.faq-list-title {
+		outline: none;
+	}
+
+	.faq-list-title:before {
+		display: block; 
+	 	content: " "; 
+	  	height: 70px;      /* Give height of your fixed element */
+        margin-top: -70px; /* Give negative margin of your fixed element */  	
+        visibility: hidden; 
+        z-index: 0;
+	}
+
+	ol.faq-list {
+		position: relative;
+		z-index: 4;
+		
+		margin-bottom: 3em;
+
+		li {
+			margin-bottom: 0.3em;
+		}
+
+		a {
+			color: #4e4e4e;
+		}
+
+	}
+
+	.back-to-top {
+		position: relative;
+		z-index: 4;
+		color: #4e4e4e;
+	}
+
+	.email{	
+		color: red;
+	}
+
+	.text-input-wrapper {
+		margin-top: 3rem;
+		margin-bottom: 5rem;
+
+		@media screen and (min-width: @sm){
+			margin-top: 4rem;
+			margin-bottom: 6rem;
+		}
+
+	}
+
+	.neu-input-glass__group {
+		@media screen and (min-width: @md){
+			font-size: 1.4em;
+		}
+	}
+
+	.cta-wrapper {
+		margin-top: 3em;
+		margin-bottom: 3rem;
+		text-align: center;
+
+		@media screen and (min-width: @sm){
+			margin-top: 5em;
+			margin-bottom: 4rem;
+		}
+
+		button {
+			@media screen and (min-width: @sm){
+				font-size: 1.2em;
+			}
+
+			@media screen and (min-width: @md){
+				font-size: 1.4em;
+				padding-top: 0.6em;
+				padding-bottom: 0.6em;
+			}
+		}
+
+	}
+}

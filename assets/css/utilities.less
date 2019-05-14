@@ -1,0 +1,38 @@
+.borderRed{
+	border: 1px solid red;
+}
+
+.neu-no-padding{
+	&-all{
+		padding: 0;
+	}
+	&-right{
+		padding-right: 0;
+	}
+	&-left{
+		padding-left: 0;
+	}
+}
+
+.neu-login, .neu-register{
+	cursor: pointer;
+}
+
+.project-title-error {
+	display: none;
+	color: #fff;
+	font-size: 16px;
+}
+.error-file-empty {
+	color: #000;
+	font-size: 16px;
+}
+.error-file-valid {
+	display: none;
+}
+
+.content {
+	@media screen and (min-width: @sm){
+		padding-top: 52px;
+	}
+}

@@ -1,0 +1,516 @@
+#profile{
+	.neu-no-pad-r{
+		padding-right: 0;
+	}
+	.neu-no-pad-l{
+		padding-left: 0;
+	}
+	.content{
+		#neu-profile-main{
+			.neu-profile-main{
+
+				&-photo{
+					background-size: contain; 
+					background-repeat: no-repeat; 
+					background-position: bottom left;
+					&-inner{
+						display:block;
+						height: 100%;
+						width: 100%;
+					}
+				}
+				&-text{
+					padding: 15px 15px 50px 0;
+					width: 50%;
+					margin-left:50%;
+					background-image: url('../img/vertical_stripes_right.png');
+					background-position: top right;
+					background-repeat: no-repeat;
+					background-size: 100%;
+					@media screen and (min-width: @md) {
+				  		padding-right:20%;
+				  	}
+					&-inner{
+
+					}
+				}
+			}
+		}
+		#neu-profile-project-desc{
+			// height:530px;
+			.neu-project-desc-wrapper{
+				position: relative;
+			}
+			.neu-project-item{
+				// &:before{
+				// 	content:" " ;
+				// 	position:absolute;
+				// 	background-image: url('../img/profile/vertical_stripes_projectdesc.png');
+				// 	background-repeat: no-repeat;
+				// 	background-position:left top;
+				// 	background-size: 100% 100%;
+				// 	height:182px;
+				// 	width:81px;
+				// 	z-index: 2;
+				// }
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+				padding-bottom: 50px;
+				@media screen and (min-width: @md) {
+		  			padding-bottom:150px;
+		  		}
+				// height: 230px;
+				&-desc-title{
+					text-align: center;
+					color: #ffffff;
+					text-transform: uppercase;
+					font-family: 'futurastd-bold';
+
+				}
+				&-text{
+					// position: absolute;
+					// bottom: 20px;
+					
+					border: 3px solid #000;
+					background-color: #ffffff;
+
+					background-position: 5% 5%, 95% 7%;
+					background-repeat: no-repeat, no-repeat;
+
+					@media screen and (min-width: @md) {
+				  		width:76%;
+				  	
+				  	}
+
+					@media screen and (min-width: @lg) {
+				  		width:85%;
+				  	}
+
+
+				}
+			}
+		}
+	}
+}
+
+
+
+
+.page__profile {
+	&.neu-modal-video-open {
+		width: 100%;
+	}
+
+	.section-hero {
+		position: relative;
+		padding: 1rem 0 3rem;
+		background-color: #e9e9e9;
+		background-image: url('../img/vertical_stripes_right.png');
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 50%;
+
+
+		@media screen and (min-width: @sm){
+			padding: 3rem 0 5rem;
+		}
+
+		@media screen and (min-width: @md){
+			padding: 6rem 0 8rem;
+		}
+
+		@media screen and (min-width: @lg){
+			padding: 8rem 0 10rem;
+		}
+
+	
+		.page-title	{
+			font-family: 'futurastd-bold', Arial, sans-serif;
+			color: #000;
+			font-size: 2.2rem;
+			text-transform: uppercase;
+			margin-bottom: 0;
+			padding-bottom: 4px;
+			letter-spacing: 0.05em;
+
+			@media screen and (min-width: @sm){
+				font-size: 2.8rem;
+			}
+
+			@media screen and (min-width: @md){
+				font-size: 3.6rem;
+			}
+
+			@media screen and (min-width: @lg){
+				font-size: 4.2rem;
+			}
+		}
+
+		.page-subtitle	{
+			font-family: 'futurastd-heavy', Arial, sans-serif;
+			color: #ff0000;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			letter-spacing: 1px;
+			padding-top: 6px;
+			padding-bottom: 9px;
+
+			@media screen and (min-width: @sm){
+				font-size: 1.4rem;
+				padding: 1.4rem 0;
+			}
+
+			@media screen and (min-width: @md){
+				font-size: 1.8rem;
+				padding: 2rem 0;
+			}
+
+
+		}
+
+
+		.neu-profile-main-separator{
+			color: #ff0000;
+			margin-top:10px;
+			margin-bottom:10px;
+			border-bottom: 2px solid #ff0000;
+			width:30px;
+			
+			@media screen and (min-width: @md) {
+		  		margin:10px 0 30px;
+		  	}
+		}
+
+		.section-copy {
+			@media screen and (min-width: @sm) {
+				padding: 1rem 0 3rem;
+				line-height: 1.6;
+		  	}
+		}
+
+		.section-copy p {
+			font-family: 'worksans-regular', Arial, sans-serif;
+			color: #393939;
+			font-size: 1.3rem;
+			padding-top:9px;
+
+			@media screen and (min-width: @sm) {
+				font-size: 1.5rem;
+				line-height:150%;
+		  	}
+
+			@media screen and (min-width: @md) {
+		  		margin:0 0 50px;
+		  		font-size: 1.7rem;
+		  	}
+
+			@media screen and (min-width: @lg) {
+		  		font-size: 1.8rem;
+		  	}
+		  	
+		}
+
+		.section-decoration {
+			position: absolute;
+			bottom: 0;
+			width: 72%;
+			max-width: 23rem;
+
+
+			@media screen and (min-width: @sm) {
+				left: 0;
+				max-width: 32rem;
+		  	}
+
+			@media screen and (min-width: @md) {
+				max-width: 45rem;
+		  	}
+
+			@media screen and (min-width: @lg) {
+				max-width: 50rem;
+		  	}
+		}
+
+		.btn-neu-profile-join {
+
+			@media screen and (min-width: @md) {
+				font-size: 1.8rem;
+				border-width: 4px;
+				max-width: 260px;
+		  	}
+		}
+	}
+
+	.section-hero__andrian {
+		.section-decoration {
+			left: -8%;
+
+			@media screen and (min-width: @xs) {
+				left: 0;
+		  	}
+		}
+	}
+
+	.section-hero__kimo {
+		.section-decoration {
+			left: -9%;
+
+			@media screen and (min-width: @xs) {
+				left: 0;
+		  	}
+		}
+	}
+
+	.section-hero__isha {
+		.section-decoration {
+			left: -11%;
+
+			@media screen and (min-width: @xs) {
+				left: 0;
+		  	}
+		}
+	}
+
+	.section-video {
+		position: relative;
+		background-position: center;
+		background-size: cover;
+		height: 21rem;
+
+		@media screen and (min-width: @xs) {
+	  		height: 33rem;
+	  	}
+
+		@media screen and (min-width: @sm) {
+	  		height: 40rem;
+	  	}
+
+		@media screen and (min-width: @md) {
+	  		height: 52rem;
+	  	}
+
+		@media screen and (min-width: @lg) {
+	  		height: 64rem;
+	  	}
+
+		&.section-video__andrian {
+			background-image: url('../img/profile/bg-video-andrian-50.jpg');
+
+			@media screen and (min-width: @md) {
+		  		background-image: url('../img/profile/bg-video-andrian.jpg');
+		  	}
+		}
+
+		&.section-video__isha {
+			background-image: url('../img/profile/bg-video-isha-50.jpg');
+
+			@media screen and (min-width: @md) {
+		  		background-image: url('../img/profile/bg-video-isha.jpg');
+		  	}
+		}
+
+		&.section-video__kimo {
+			background-image: url('../img/profile/bg-video-kimo-50.jpg');
+
+			@media screen and (min-width: @md) {
+		  		background-image: url('../img/profile/bg-video-kimo.jpg');
+		  	}
+		}
+
+		.btn-play-video {
+			display: block;
+			position: absolute;
+			left: ~"calc(50% - 77px)";
+			top: ~"calc(50% - 43px)";
+			width: 143px;
+			height: 85px;
+			background-size: 100%;
+			background-image: url('../img/profile/btn-play.png');
+			border: none;
+			background-color: transparent;
+		}
+	}
+
+	.section-job-desc {
+		position: relative;
+		background-size: cover;
+		background-position: center;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 5rem;
+
+		@media screen and (min-width: @sm) {
+	  		padding-bottom: 8rem;
+	  	}
+
+		@media screen and (min-width: @md) {
+	  		padding-bottom: 11rem;
+	  	}
+
+		@media screen and (min-width: @lg) {
+	  		padding-bottom: 14rem;
+	  	}
+
+
+
+		&.section-job-desc__andrian {
+			background-image: url('../img/profile/neu-profile-andrian-desc-50.jpg');
+
+			@media screen and (min-width: @md) {
+		  		background-image: url('../img/profile/neu-profile-andrian-desc.jpg');
+		  	}
+		}
+
+		&.section-job-desc__isha {
+			background-image: url('../img/profile/neu-profile-isha-desc-50.jpg');
+
+			@media screen and (min-width: @md) {
+		  		background-image: url('../img/profile/neu-profile-isha-desc.jpg');
+		  	}
+		}
+
+		&.section-job-desc__kimo {
+			background-image: url('../img/profile/neu-profile-kimo-desc-50.jpg');
+
+			@media screen and (min-width: @md) {
+		  		background-image: url('../img/profile/neu-profile-kimo-desc.jpg');
+		  	}
+		}
+
+		.section-title {
+			width:80%;
+			max-width: 400px;
+			margin:0 auto;
+			position: relative;
+			z-index: 3;
+			font-size: 2rem;
+			// background-color:#b50708;
+			margin-top:0;
+			margin-bottom:0;
+			padding-top:35px;
+			padding-bottom:35px;
+			letter-spacing: 0.1em;
+
+			@media screen and (min-width: @sm) {
+		  		padding: 5rem 0;
+		  	}
+
+			@media screen and (min-width: @md) {
+		  		padding: 7rem 0;
+		  		font-size:2.5rem;
+		  	}
+
+			@media screen and (min-width: @lg) {
+		  		padding: 8rem 0;
+		  		font-size:2.8rem;
+		  	}
+		}
+
+		.neu-project-item-text {
+			max-width: 56rem;
+			margin-left: auto;
+			margin-right: auto;
+
+
+			@media screen and (min-width: @sm) {
+				padding: 1rem;
+				max-width: 59rem;
+    			background-position: 14% 4rem, 86% 8rem !important; 
+		  	}
+
+			@media screen and (min-width: @md) {
+				padding: 2rem;
+				max-width: 105rem;
+		  	}
+
+			@media screen and (min-width: @lg) {
+				padding: 3rem;
+		  	}
+		}
+
+		.neu-projet-item-text-heading {
+			position: relative;
+			font-size: 2.3rem;
+			font-family: 'futuracondensedbold', arial, sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			padding-left:22px;
+			padding-right:22px;
+			color: #000;
+			z-index: 5;
+			max-width: 17em;
+			margin-left: auto;
+			margin-right: auto;
+
+			@media screen and (min-width: @md) {
+		  		width:70%;
+		  		margin:40px auto 0;
+		  		font-size:2.8rem;
+		  	}
+
+			@media screen and (min-width: @lg) {
+		  		font-size:3.4rem;
+		  	}
+
+		  	&:before,
+		  	&:after {
+				position: absolute;
+				content: "";
+				width: 39px;
+				height: 36px;
+				background-repeat: no-repeat;
+				top: -0.3em;
+				z-index: -1;
+
+				@media screen and (min-width: @md) {
+			  		width: 90px;
+			  		height: 90px;
+			  		top: -0.7em;
+			  	}
+		  	}
+
+		  	&:before {
+		  		background-image: url('../img/quotaion-1.png');
+				left: 0.5em;
+
+				@media screen and (min-width: @md) {
+			  		background-image: url('../img/profile/quotation-open.png');
+			  		left: 0em;
+			  	}
+		  	}
+
+		  	&:after {
+		  		background-image: url('../img/quotaion-2.png');
+				right: 0.5em;
+
+				@media screen and (min-width: @md) {
+			  		background-image: url('../img/profile/quotation-close.png');
+			  		right: 0em;
+			  	}
+		  	}
+
+		}
+
+
+		.neu-project-item-text-small {
+			font-family: 'worksans-regular', sans-serif;
+			font-size: 1em;
+			color: #393939;
+			padding-left:22px;
+			padding-right: 15px;
+
+			@media screen and (min-width: @md) {
+		  		padding:30px 40px;
+		  		line-height:150%;
+		  	}
+
+			@media screen and (min-width: @lg) {
+				line-height: 1.6;
+				font-size: 1.2em;
+		  	}
+		}
+	}
+}

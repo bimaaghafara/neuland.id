@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neuland.id </title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="faq" class="page__footer">
+
+<!-- header start-->
+	<header class="header">
+	 	<!-- navigation start-->
+	 	<nav class="navbar">
+			<!-- <div class="container-fluid"> -->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<img class="img-responsive neu-header-logo visible-xs" src="../assets/img/home/headerLogo.png">
+					<a class="navbar-brand hidden-xs brand-desktop" href="index.html">NEULAND</a>
+					<a class="navbar-brand visible-xs" href="index.html">DAFTAR PERTANYAAN</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">home 1</a></li>
+								<li><a href="#">home 2</a></li>
+								<li><a href="#">home 3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Challenge <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="sound_challenge.html">Sound</a></li>
+								<li><a href="vision_challenge.html">Vision</a></li>
+								<li><a href="taste_challenge.html">Taste</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Local Giants <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="profile_before-log_kimo.html">Kimo Rizky</a></li>
+								<li><a href="profile_before-log_isha.html">Isha Hening</a></li>
+								<li><a href="profile_before-log_andrian.html">Andrian Ishak</a></li>
+							</ul>
+						</li>
+						<li><a href="profile_user.html">My Account</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- </div> -->
+		</nav>
+		<!-- navigation end -->
+	</header>
+	<!-- header end-->
+
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row top">
+				<ul class="footer-menu-list">
+					<li>
+						<a href="footer_syarat-dan-ketentuan.html">Syarat & Ketentuan Berlaku</a>
+					</li>
+					<li>
+						<a href="#">Perihal Rokok</a>
+					</li>
+					<li>
+						<a href="footer_hub-kami.html">Hubungi Kami</a>
+					</li>
+					<li>
+						<a href="footer_faq.html">Daftar Pertanyaan </a>
+					</li>
+					<li>
+						<a href="footer_hapus-akun-saya.html">Hapus Akun Saya</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="row bottom">
+				<div class="col-xs-3 col-sm-2 col-sm-offset-1 ">
+					<img src="../assets/img/home/footerLogo.png" class="img-responsive">	
+				</div>
+				<div class="col-xs-9">
+					<p>
+						Jika anda sudah terdaftar dan diverifikasi untuk merek lain dibawah PT HM Sampoerna Tbk. Anda dapat menggunakan detail login anda untuk mengakses situs ini. Untuk pertanyaan dan menghubungi kami, anda dapat mengirimkan email ke info@move.co.id. 
+						<br><br>
+						INFORMASI DALAM WEBSITE INI DITUJUKAN UNTUK PEROKOK BERUSIA 18 TAHUN ATAU LEBIH DAN TINGGAL DI WILAYAH INDONESIA.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+		<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+		<script src="../assets/js/script.js"></script>
+	<script>
+		// Select all links with hashes
+		$('a[href*="#"]')
+		  // Remove links that don't actually link to anything
+		  .not('[href="#"]')
+		  .not('[href="#0"]')
+		  .click(function(event) {
+		    // On-page links
+		    if (
+		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		      && 
+		      location.hostname == this.hostname
+		    ) {
+		      // Figure out element to scroll to
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		      // Does a scroll target exist?
+		      if (target.length) {
+		        // Only prevent default if animation is actually gonna happen
+		        event.preventDefault();
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000, function() {
+		          // Callback after animation
+		          // Must change focus!
+		          var $target = $(target);
+		          $target.focus();
+		          if ($target.is(":focus")) { // Checking if the target was focused
+		            return false;
+		          } else {
+		            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+		            $target.focus(); // Set focus again
+		          };
+		        });
+		      }
+		    }
+		  });
+	</script>
+</body>
+</html>

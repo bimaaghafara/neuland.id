@@ -1,0 +1,188 @@
+.neu-file-upload{
+	visibility:hidden;
+}
+
+.label-neu-file-submission{
+	position: relative;
+
+	.btn-file-submission{
+		vertical-align: middle;
+		border-radius: 0;
+		color: #000000;
+		border: 2px solid #b50708;
+		background-color: transparent;
+		padding:0;
+		width: 100%;
+		max-width: 270px;
+		font-family: 'futurastd-bold', Arial, sans-serif;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		margin: 10px 0 10px 0;
+		transition: all 0.1s ease-in;
+		.left{
+			width: 75%;
+			float: left;
+			padding: 8px 14px;
+		}
+		.right{
+			width:25%;
+			float:right;
+			padding:8px;
+			padding-right: 6px;
+			color: #ebebeb;
+			background-color: #b50708;
+			transition: all 0.1s ease-in;
+		}
+	}
+	.text-format-accept{
+		color: #4f4c4c;
+		text-transform: uppercase;
+		font-family: 'futurastd-heavy', sans-serif;
+		margin:0;
+	}
+	.text-size-max{
+		color: #dc2c2c;
+		text-transform: uppercase;
+		font-family: 'futurastd-book', sans-serif;
+		font-size:1.2rem;
+		margin:0;
+	}
+
+
+	.btn-delete-input {
+		display: none;
+		background: rgba(0,0,0,0.1);
+		position: absolute;
+		left: 100%;
+		top: 10px;
+		padding: 0.7em 1em;
+		color: black;
+		// opacity: 0;
+		transition: opacity 0.2s ease-in;
+		cursor: pointer;
+		display: none;
+	}
+
+	&:hover .btn-delete-input {
+		opacity: 1;
+	}
+}
+
+.file-submit-wrap:last-of-type .btn-delete-input {
+	display: block;
+}
+
+.label-neu-file-submission.is-valid {
+	.btn-file-submission {
+		border-color: #498003;
+	}
+
+	.right {
+		background: #498003;
+	}
+}
+
+
+
+
+
+.neu-input__text {
+	border-radius:0;
+	border: 2px solid #000;
+	font-family: 'worksans-regular', sans-serif;
+	height: auto;
+	padding: 0.7em 1.4em;
+
+	&:hover,
+	&:active,
+	&:focus {
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(181,7,8,.6);
+		border-color: rgb(181,7,8);
+	}
+}
+
+.neu-input-glass__group {
+	margin-bottom: 2em;
+	position: relative;
+}
+
+.neu-input-glass__text {
+	border: none;
+	border-bottom: 2px solid #6e6e6e;
+	box-shadow: none;
+	padding: 0.8em 0;
+	height: auto;
+	position: relative;
+	z-index: 2;
+	background: none;
+	box-shadow: none;
+	border-radius: 0;
+	font-size: 1em;
+
+	&:hover,
+	&:active,
+	&:focus {
+		box-shadow: none;
+		border-bottom: 2px solid #6e6e6e;
+	}
+}
+
+.neu-input-glass__label {
+	position: absolute;
+	transition: all 0.15s ease-in;
+	font-family: 'futurastd-book', sans-serif;
+	color: #6e6e6e;
+	font-style: italic;
+	font-size: 0.7em;
+	top: 1.55em;
+	color: #8e8e8e;
+}
+
+input:focus + .neu-input-glass__label,
+input:valid + .neu-input-glass__label  {
+	top: -1em;
+	font-size: 0.6em;
+}
+
+.neu-input-glass__checkbox {
+	position: relative;
+
+	input {
+		display: none;
+	}
+
+	label {
+		text-align: left;
+		padding-left: 30px;
+		color: #6e6e6e;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0.2em;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			border: 1px solid #6e6e6e;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: ~"calc(0.2em + 5px)";
+			width: 10px;
+			height: 10px;
+			left: 5px;
+			background: #6e6e6e;
+			border-radius: 50%;
+			opacity: 0;
+			transition: opacity 0.1s ease-in;
+
+		}
+	}
+
+	input:checked + label:after {
+		opacity: 1;
+	}
+}

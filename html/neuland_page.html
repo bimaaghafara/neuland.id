@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neuland.id </title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+</head>
+<body id="neuland-page" >
+
+	<div class="video-player">
+		<a href="javascript:void(0)" class="close">
+			<i class="fa fa-times"></i>
+		</a>
+		<div class="video-wrapper"></div>
+	</div>
+
+	<!-- header start-->
+	<header class="header">
+	 	<!-- navigation start-->
+	 	<nav class="navbar">
+			<!-- <div class="container-fluid"> -->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<img class="img-responsive neu-header-logo visible-xs" src="../assets/img/home/headerLogo.png">
+					<a class="navbar-brand hidden-xs brand-desktop" href="index.html">NEULAND</a>
+					<a class="navbar-brand visible-xs" href="index.html">NEULAND</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">home 1</a></li>
+								<li><a href="#">home 2</a></li>
+								<li><a href="#">home 3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Challenge <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="sound_challenge.html">Sound</a></li>
+								<li><a href="vision_challenge.html">Vision</a></li>
+								<li><a href="taste_challenge.html">Taste</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Local Giants <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="profile_before-log_kimo.html">Kimo Rizky</a></li>
+								<li><a href="profile_before-log_isha.html">Isha Hening</a></li>
+								<li><a href="profile_before-log_andrian.html">Andrian Ishak</a></li>
+							</ul>
+						</li>
+						<li><a href="profile_user.html">My Account</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- </div> -->
+		</nav>
+		<!-- navigation end -->
+	</header>
+	<!-- header end-->
+
+	<!-- content start -->
+	<div class="content">
+		<div class="container-fluid ">
+			<div class="neu-container-article">
+				<div class="row neu-media">
+					<div class="neu-media-player">
+						<video id="neu-media-player-video" preload class="neu-media-player-video" poster="../assets/videos/goneFishinmp4.jpg" >
+							<source src="../assets/videos/goneFishinmp4.mp4" type="video/mp4"></source>
+							<p>Your browser doesn't support HTML5 video.</p>
+						</video>
+
+						<div class="play-video-button">
+							<img src="../assets/img/neu-play-video.png" alt="">
+						</div>
+
+						<div id="neu-media-player-control" class="neu-media-player-control">
+							<!-- <div class="neu-media-player-control-progresstime">
+								<span class="current-time">00:00:00</span>
+								<span class="duration-time">00:00:00</span>
+							</div> -->
+							<div class="neu-media-player-control-progress">
+								<div class="video-progress-box">
+									<span class="video-progress-buffer"></span>
+									<span class="video-progress-play"></span>
+								</div>
+							</div>
+							<div class="neu-media-player-control-setting">
+								<div class="video-volume">
+									<div class="video-volume-bar"></div>
+								</div>
+								<div class="video-fullscreen" data-video="../assets/videos/goneFishinmp4.mp4"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row visible-xs visible-sm">
+					<div class="article-div">
+						<div class="article-left col-xs-6" style="background-image: url('../assets/img/neuland/article-1.png');">
+							<div class="article-text">
+								<h3>Lorem Ipsum</h3>
+								<p>Article Title</p>
+							</div>
+							<a href="#" class="btn btn-default btn-neu-readmore">
+								<div class="left">Read More</div>
+								<div class="right"><span class="glyphicon glyphicon-menu-right"></span></div>
+							</a>
+						</div>
+						
+						<div class="article-right col-xs-6" style="background-image: url('../assets/img/neuland/article-2.png');">
+							<div class="article-text">
+								<h3>Lorem Ipsum</h3>
+								<p>Article Title</p>
+							</div>
+							<a href="#" class="btn btn-default btn-neu-readmore">
+								<div class="left">Read More</div>
+								<div class="right"><span class="glyphicon glyphicon-menu-right"></span></div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hidden-xs hidden-sm">
+					<div class="article-div-desktop">
+						<div class="recent-articles">
+							<span>RECENT ARTICLES</span>
+						</div>
+						<div class="article-first">
+							<div class="plus">
+								+
+							</div>
+							<div class="date">
+								07/06/2017
+							</div>
+							<div class="article-text">
+								<h3>Lorem Ipsum</h3>
+								<p>Article Title</p>
+							</div>
+							<a href="#" class="btn btn-default btn-neu-readmore">
+								<div class="left">Read More</div>
+								<div class="right"><span class="glyphicon glyphicon-menu-right"></span></div>
+							</a>
+						</div>
+						<div class="article-second">
+							<div class="plus">
+								+
+							</div>
+							<div class="date">
+								07/06/2017
+							</div>
+							<div class="article-text">
+								<h3>Lorem Ipsum</h3>
+								<p>Article Title</p>
+							</div>
+							<a href="#" class="btn btn-default btn-neu-readmore">
+								<div class="left">Read More</div>
+								<div class="right"><span class="glyphicon glyphicon-menu-right"></span></div>
+							</a>
+						</div>
+						<div class="article-third">
+							<div class="plus">
+								+
+							</div>
+							<div class="date">
+								07/06/2017
+							</div>
+							<div class="article-text">
+								<h3>Lorem Ipsum</h3>
+								<p>Article Title</p>
+							</div>
+							<a href="#" class="btn btn-default btn-neu-readmore">
+								<div class="left">Read More</div>
+								<div class="right"><span class="glyphicon glyphicon-menu-right"></span></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row neu-media">
+					<div class="neu-media-player">
+						<video id="neu-media-player-video" preload class="neu-media-player-video" poster="../assets/videos/andrewarthurmp4.jpg" >
+							<source src="../assets/videos/andrewarthurmp4.mp4" type="video/mp4"></source>
+							<p>Your browser doesn't support HTML5 video.</p>
+						</video>
+						<div class="play-video-button">
+							<img src="../assets/img/neu-play-video.png" alt="">
+						</div>
+						<div id="neu-media-player-control" class="neu-media-player-control">
+							<!-- <div class="neu-media-player-control-progresstime">
+								<span class="current-time">00:00:00</span>
+								<span class="duration-time">00:00:00</span>
+							</div> -->
+							<div class="neu-media-player-control-progress">
+								<div class="video-progress-box">
+									<span class="video-progress-buffer"></span>
+									<span class="video-progress-play"></span>
+								</div>
+							</div>
+							<div class="neu-media-player-control-setting">
+								<div class="video-volume">
+									<div class="video-volume-bar"></div>
+								</div>
+								<div class="video-fullscreen" data-video="../assets/videos/andrewarthurmp4.mp4"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+			<div class="row visible-xs">
+				<div class="load-more">
+					<div>
+						<button class="btn btn-default btn-load-more">
+							Load More
+						</button>
+					</div>
+				</div>	
+			</div>
+			
+		</div>
+	</div>
+	<!-- content end -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row top">
+				<ul class="footer-menu-list">
+					<li>
+						<a href="footer_syarat-dan-ketentuan.html">Syarat & Ketentuan Berlaku</a>
+					</li>
+					<li>
+						<a href="#">Perihal Rokok</a>
+					</li>
+					<li>
+						<a href="footer_hub-kami.html">Hubungi Kami</a>
+					</li>
+					<li>
+						<a href="footer_faq.html">Daftar Pertanyaan </a>
+					</li>
+					<li>
+						<a href="footer_hapus-akun-saya.html">Hapus Akun Saya</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="row bottom">
+				<div class="col-xs-3 col-sm-2 col-sm-offset-1 ">
+					<img src="../assets/img/home/footerLogo.png" class="img-responsive">	
+				</div>
+				<div class="col-xs-9">
+					<p>
+						Jika anda sudah terdaftar dan diverifikasi untuk merek lain dibawah PT HM Sampoerna Tbk. Anda dapat menggunakan detail login anda untuk mengakses situs ini. Untuk pertanyaan dan menghubungi kami, anda dapat mengirimkan email ke info@move.co.id. 
+						<br><br>
+						INFORMASI DALAM WEBSITE INI DITUJUKAN UNTUK PEROKOK BERUSIA 18 TAHUN ATAU LEBIH DAN TINGGAL DI WILAYAH INDONESIA.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../assets/js/script.js"></script>
+</body>
+</html>

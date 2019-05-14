@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neuland.id </title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body id="challenge" class="page__challenge">
+
+	<div class="video-player">
+		<a href="javascript:void(0)" class="close">
+			<i class="fa fa-times"></i>
+		</a>
+		<div class="video-wrapper"></div>
+	</div>
+
+	<!-- header start-->
+	<header class="header">
+	 	<!-- navigation start-->
+	 	<nav class="navbar">
+			<!-- <div class="container-fluid"> -->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<img class="img-responsive neu-header-logo visible-xs" src="../assets/img/home/headerLogo.png">
+					<a class="navbar-brand hidden-xs brand-desktop" href="index.html">NEULAND</a>
+					<a class="navbar-brand visible-xs" href="index.html">VISION PROJECT</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">home 1</a></li>
+								<li><a href="#">home 2</a></li>
+								<li><a href="#">home 3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Challenge <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="sound_challenge.html">Sound</a></li>
+								<li><a href="vision_challenge.html">Vision</a></li>
+								<li><a href="taste_challenge.html">Taste</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Local Giants <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="profile_before-log_kimo.html">Kimo Rizky</a></li>
+								<li><a href="profile_before-log_isha.html">Isha Hening</a></li>
+								<li><a href="profile_before-log_andrian.html">Andrian Ishak</a></li>
+							</ul>
+						</li>
+						<li><a href="profile_user.html">My Account</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- </div> -->
+		</nav>
+		<!-- navigation end -->
+	</header>
+	<!-- header end-->
+
+	<!-- content start -->
+	<div class="content">
+		<header class="section content-header content-header__vision">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+						<h1 class="content-header-title section-title">Vision Challenge</h1>
+						<p class="content-header-desc">
+							Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's.
+						</p>
+						<button type="button" data-video="../assets/videos/goneFishinmp4.mp4" class="play-video btn btn-default btn-glass__white btn-project-video-play">
+							Play Now
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<form action="">
+			<section class="section content-project-title content-project-title__vision">
+				<div class="content-project-title-inner"></div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<label for="neu-project-title">
+								<h3 class="content-project-title-title section-title">
+									Your Project Title
+								</h3>
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<div class="form-group">
+							  	<input type="text" id="neu-project-title" name="neu-project-title" class="form-control neu-input-project-title neu-input__text" placeholder="write your title here..">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- file submission -->
+			<section class="section content-file-submission content-file-submission__vision">
+				<div class="container-fluid">
+					
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+							<h3 class="content-file-submission-title section-title">
+								File Submissions
+							</h3>
+							<p class="content-file-submission-desc">
+								Submit project 'Vision of The City' lo dengan upload di bawah ini (maksimal 3 submissions)
+							</p>
+						</div>
+					</div>
+					<div class="row row-submit-input">
+
+						<div class="col-xs-12  col-sm-12 file-submit-wrap">
+							<input type="file" name="neu-file-upload-1" accept="video/.mp4,.mov,.flv,.3gp," class="neu-file-upload video" id="neu-file-upload-1">
+
+							<label for="neu-file-upload-1" class="label-neu-file-submission">
+								<div class="error-file-valid" >Your File is more than 50mb</div>
+								<div class="error-file-empty"></div>
+								<div class="btn btn-default btn-file-submission">
+									<div class="left">Upload 1</div>
+									<div class="right"><span class="glyphicon glyphicon-plus"></span></div>
+								</div>
+								<p class="text-format-accept">
+									Only Mov, flv, MP4, 3gp Format
+								</p>
+								<p class="text-size-max">
+									Maximum Size 50 Mb
+								</p>
+							</label>
+	                    </div>
+					</div>
+
+
+					<div class="row file-add-more">
+						<button class="btn btn-default btn-glass__red btn-add-more-file js-add-more">
+							Add More
+						</button>
+					</div>
+					
+					<div class="row">
+						<button class="btn btn-default btn-solid__red btn-submit-challenge">
+							Submit Now
+						</button>
+					</div>
+				</div>
+			</section>
+		</form>
+		
+	</div>
+
+	<div class="hidden file-input-template">
+		<div class="col-xs-12  col-sm-12 file-submit-wrap file-submit-wrap-template">
+			<input type="file" name="neu-file-upload-0" accept="video/.mp4,.mov,.flv,.3gp," class="neu-file-upload video" id="neu-file-upload-0">
+
+			<label for="neu-file-upload-0" class="label-neu-file-submission">
+				<div class="error-file-valid" >Your File is more than 50mb</div>
+				<div class="error-file-empty"></div>
+				<div class="btn btn-default btn-file-submission">
+					<div class="left">Upload 1</div>
+					<div class="right"><span class="glyphicon glyphicon-plus"></span></div>
+				</div>
+				<p class="text-format-accept">
+					Only Mov, flv, MP4, 3gp Format
+				</p>
+				<p class="text-size-max">
+					Maximum Size 50 Mb
+				</p>
+
+				<div class="btn-delete-input js-delete-input"><span class="glyphicon glyphicon-remove"></span></div>
+				
+			</label>
+	    </div>
+	</div>
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row top">
+				<ul class="footer-menu-list">
+					<li>
+						<a href="footer_syarat-dan-ketentuan.html">Syarat & Ketentuan Berlaku</a>
+					</li>
+					<li>
+						<a href="#">Perihal Rokok</a>
+					</li>
+					<li>
+						<a href="footer_hub-kami.html">Hubungi Kami</a>
+					</li>
+					<li>
+						<a href="footer_faq.html">Daftar Pertanyaan </a>
+					</li>
+					<li>
+						<a href="footer_hapus-akun-saya.html">Hapus Akun Saya</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="row bottom">
+				<div class="col-xs-3 col-sm-2 col-sm-offset-1 ">
+					<img src="../assets/img/home/footerLogo.png" class="img-responsive">	
+				</div>
+				<div class="col-xs-9">
+					<p>
+						Jika anda sudah terdaftar dan diverifikasi untuk merek lain dibawah PT HM Sampoerna Tbk. Anda dapat menggunakan detail login anda untuk mengakses situs ini. Untuk pertanyaan dan menghubungi kami, anda dapat mengirimkan email ke info@move.co.id. 
+						<br><br>
+						INFORMASI DALAM WEBSITE INI DITUJUKAN UNTUK PEROKOK BERUSIA 18 TAHUN ATAU LEBIH DAN TINGGAL DI WILAYAH INDONESIA.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../assets/js/script.js"></script>
+
+	<script>
+		$(document).on("change", '.neu-file-upload', function(){
+			var _this = $(this);
+
+			if (_this.val().length != 0) {
+				var filename = _this.val().replace(/C:\\fakepath\\/i, '');
+
+				if (filename.length > 12) filename = filename.substring(0,12) + '..' ;
+
+				_this.next().find('.left').html(filename);
+
+				_this.next().find('.right').html("<span class='glyphicon glyphicon-ok'></span>");
+
+				_this.next().addClass('is-valid');
+			} 
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+#profile-user{
+	.header{
+		// .header;
+		margin-top: 0;
+		.navbar{
+			background: #1a1a1a;
+			.navbar-nav {
+				background: transparent;
+			} 
+		}
+	}
+	.content{
+		background-image: url('../img/profile/profile_user_head_bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		.neu-profile-user-head{
+			&-wrap{
+				text-align: center;
+				color: #fff;
+				text-transform: uppercase;
+				padding:40px 40px 64px 40px;
+				@media screen and (min-width: @md){
+					padding-bottom:30px;
+				}
+				.neu-profile-user-greeting{
+					font-family: 'futurastd-book', Arial, Helvetica, sans-serif;
+					font-size: 2.4rem;
+					margin:0;
+					padding-bottom: 30px;
+				}
+				.neu-profile-user-photo{
+					&-wrap{
+						width:160px;
+						height:160px;
+						margin: 0 auto;
+						position: relative;
+						&-circle{
+							width: 160px;
+							height: 160px;
+							border-radius: 80px;
+							-moz-border-radius: 80px;
+							-webkit-border-radius: 80px;
+							overflow: hidden;
+							img{
+								width:100%;
+								height:100%;
+							}
+						}
+					}
+					&-add{
+						background-color: #ed1b24;
+						position: absolute;
+						text-align: center;
+						vertical-align: middle;
+						line-height: 37px;
+						font-size: 30px;
+						bottom: 8px;
+						right: 6px;
+						height:45px;
+						width: 45px;
+						border-radius: 999px;
+						-moz-border-radius: 999px;
+						-webkit-border-radius: 999px;
+						cursor: pointer;
+					}
+					#neu-profile-user-photo-file{
+						visibility: hidden;
+					}
+				}
+				.neu-profile-user-location{
+					font-family: 'futurastd-medium', Arial, Helvetica, sans-serif;
+					font-size: 1.8rem;
+					padding-top:35px;
+					padding-left:20px;
+					padding-right: 20px;
+				}
+				.neu-profile-user-occupation{
+					font-family: 'futurastd-heavy', Arial, Helvetica, sans-serif;
+					font-size: 2.0rem;
+					margin:0;
+				}
+				.neu-profile-separator-loc{
+					font-size:30px;
+				}
+			}
+		}
+		.neu-profile-user-action{
+			&-wrap{
+				#neu-profile-user-action-list{
+					.action-item{
+						display: table;
+						background-color: #f0f0f0;
+						width:100%;
+						-webkit-transition: all 200ms ease-in;
+						-ms-transition: all 200ms ease-in;
+						-moz-transition: all 200ms ease-in;
+						transition: all 200ms ease-in;
+						a{	
+							width:100%;
+							height: 100%;
+							padding-left: 20px;
+							padding-right: 20px;
+							box-sizing:border-box;
+							display: block;
+							font-family: 'futurastd-heavy', Arial, Helvetica, sans-serif;
+							font-size: 1.8rem;
+							text-transform: uppercase;
+							color: #000;
+							.left{
+								margin-top:20px;
+								margin-bottom:20px;
+								float:left;
+								width:42px;
+								min-height: 42px;
+								&.change-password{
+									background-image: url('../img/profile/profile-act-icon-pass.png');
+									background-repeat: no-repeat;
+									background-size: contain;
+								}
+								&.edit-profile{
+									background-image: url('../img/profile/profile-act-icon-edit.png');
+									background-repeat: no-repeat;
+									background-size: contain;
+								}
+								&.notification{
+									background-image: url('../img/profile/profile-act-icon-notif.png');
+									background-repeat: no-repeat;
+									background-size: contain;
+								}
+								&.signout{
+									background-image: url('../img/profile/profile-act-icon-signout.png');
+									background-repeat: no-repeat;
+									background-size: contain;
+								}
+							}
+							.center{
+								float:left;
+								margin-top:20px;
+								margin-bottom:20px;
+								padding-left:30px;
+								padding-top:8px;
+								padding-bottom: 8px;
+
+								@media screen and (min-width: @md){
+									padding-top: 14px;
+								}
+
+							}
+							.right{
+								float:right;
+								margin-top:20px;
+								margin-bottom:20px;
+								padding-top:8px;
+								padding-bottom: 8px;
+
+								@media screen and (min-width: @md){
+									padding-top: 14px;
+								}
+							}
+						}
+						&:not(:last-child){
+							border-bottom:2px solid #d6d5d5;
+						}
+						&:hover{
+							background-color: #000;
+							a{
+								color: #fff;
+								.left{
+									&.change-password{
+										background-image: url('../img/profile/profile-act-icon-pass-hov.png');
+										background-repeat: no-repeat;
+										background-size: contain;
+									}
+
+									&.edit-profile{
+										background-image: url('../img/profile/profile-act-icon-edit-hov.png');
+										background-repeat: no-repeat;
+										background-size: contain;
+									}
+									&.notification{
+										background-image: url('../img/profile/profile-act-icon-notif-hov.png');
+										background-repeat: no-repeat;
+										background-size: contain;
+									}
+									&.signout{
+										background-image: url('../img/profile/profile-act-icon-signout-hov.png');
+										background-repeat: no-repeat;
+										background-size: contain;
+									}
+								}
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	.footer{
+		.bottom{
+			p{text-align: left;}
+		}
+	}
+
+	@media screen and (min-width: @md){
+		.content{
+			background: url('../img/profile/Desktop_profile_user_bg.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			.neu-profile-user-action{
+				padding-bottom: 10px;
+				&-wrap{
+					#neu-profile-user-action-list{
+						.action-item{
+							width: 35%;
+							max-width: 400px;
+							margin: 0 auto;
+							margin-top: 20px;
+							margin-bottom: 40px;
+							a{
+								font-size: 1.4rem;
+								padding-left: 30px;
+								padding-right: 30px;
+								.center{
+									padding-left: 55px;
+								}
+							}
+							.right{
+								color: #696969;							
+							}
+							&:not(:last-child){
+								border-bottom:0;
+							}
+							&:hover{
+								background-color: #363636;
+								a,.right{
+									color: #fff;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

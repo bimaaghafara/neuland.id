@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neuland.id </title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body id="profile-user" >
+	<!-- header start-->
+	<header class="header">
+	 	<!-- navigation start-->
+	 	<nav class="navbar">
+			<!-- <div class="container-fluid"> -->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img class="img-responsive neu-header-logo visible-xs" src="../assets/img/home/headerLogo.png">
+					<a class="navbar-brand hidden-xs brand-desktop" href="index.html">NEULAND</a>
+					<a class="navbar-brand visible-xs" href="index.html">PROFILE</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">home 1</a></li>
+								<li><a href="#">home 2</a></li>
+								<li><a href="#">home 3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Challenge <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="sound_challenge.html">Sound</a></li>
+								<li><a href="vision_challenge.html">Vision</a></li>
+								<li><a href="taste_challenge.html">Taste</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Local Giants <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="profile_before-log_kimo.html">Kimo Rizky</a></li>
+								<li><a href="profile_before-log_isha.html">Isha Hening</a></li>
+								<li><a href="profile_before-log_andrian.html">Andrian Ishak</a></li>
+							</ul>
+						</li>
+						<li><a href="profile_user.html">My Account</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- </div> -->
+		</nav>
+		<!-- navigation end -->
+	</header>
+	<!-- header end-->
+
+	
+	<!-- content start -->
+	<div class="content">
+		<div class="container-fluid">
+			<div class="row neu-profile-user-head" id="neu-profile-user-head">
+				<div class="col-xs-12 col-sm-12 col-md-12 neu-profile-user-head-wrap">
+					
+					<h3 class="neu-profile-user-greeting">
+						Hi! John Doe
+					</h3>
+					
+					<form action="" method="post" enctype="multipart/form-data">
+						<div class="neu-profile-user-photo">
+							<div class="neu-profile-user-photo-wrap">
+								<div class="neu-profile-user-photo-wrap-circle">
+									<img src="../assets/img/profile/profile_user_photo_default.png" alt="" class="neu-profile-user-img">	
+								</div>
+								<label for="neu-profile-user-photo-file" class="neu-profile-user-photo-file-label">
+									<div class="neu-profile-user-photo-add">+</div>
+								</label>
+								<input type="file" style="width:10px;" name="neu-profile-user-photo-file" accept="image/*" class="neu-profile-user-photo-file" id="neu-profile-user-photo-file">
+							</div>
+						</div>
+					</form>
+
+					<!--<div class="neu-profile-user-location">
+						<span class="glyphicon glyphicon-map-marker"></span> Cilandak Timur, DKI Jakarta
+					</div>-->
+					<div class="neu-profile-user-location">
+						<span class="glyphicon glyphicon-map-marker hidden-md hidden-lg"></span> Cilandak Timur
+						<span class="hidden-md hidden-lg">, DKI Jakarta</span>
+						<div class="hidden-sm hidden-xs" style="margin-top:8px;">DKI Jakarta</div>
+					</div>
+					<div class="neu-profile-separator-loc hidden-sm hidden-xs">___</div> 
+					<!-- <p class="neu-profile-user-occupation">
+						Karyawan Swasta
+					</p> -->
+				</div>
+			</div>
+	
+			<div class="row neu-profile-user-action" id="neu-profile-user-action">
+				<div class="col-xs-12 col-sm-12 col-md-12 neu-profile-user-action-wrap neu-no-padding-all">
+					<div id="neu-profile-user-action-list">
+						<div class="action-item">
+							<a href="">
+								<div class="left change-password"></div>
+								<div class="center">Change Password</div>
+								<div class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+							</a>
+						</div>
+						<div class="action-item">
+							<a href="">
+								<div class="left edit-profile"></div>
+								<div class="center">Edit My Profile</div>
+								<div class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+							</a>
+						</div>
+						<!-- <div class="action-item">
+							<a href="">
+								<div class="left notification"></div>
+								<div class="center">My Notifications</div>
+								<div class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+							</a>
+						</div> -->
+						<div class="action-item">
+							<a href="">
+								<div class="left signout"></div>
+								<div class="center">Sign Out</div>
+								<div class="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- content end -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row top">
+				<ul class="footer-menu-list">
+					<li>
+						<a href="footer_syarat-dan-ketentuan.html">Syarat & Ketentuan Berlaku</a>
+					</li>
+					<li>
+						<a href="#">Perihal Rokok</a>
+					</li>
+					<li>
+						<a href="footer_hub-kami.html">Hubungi Kami</a>
+					</li>
+					<li>
+						<a href="footer_faq.html">Daftar Pertanyaan </a>
+					</li>
+					<li>
+						<a href="footer_hapus-akun-saya.html">Hapus Akun Saya</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="row bottom">
+				<div class="col-xs-3 col-sm-2 col-sm-offset-1 ">
+					<img src="../assets/img/home/footerLogo.png" class="img-responsive">	
+				</div>
+				<div class="col-xs-9">
+					<p>
+						Jika anda sudah terdaftar dan diverifikasi untuk merek lain dibawah PT HM Sampoerna Tbk. Anda dapat menggunakan detail login anda untuk mengakses situs ini. Untuk pertanyaan dan menghubungi kami, anda dapat mengirimkan email ke info@move.co.id. 
+						<br><br>
+						INFORMASI DALAM WEBSITE INI DITUJUKAN UNTUK PEROKOK BERUSIA 18 TAHUN ATAU LEBIH DAN TINGGAL DI WILAYAH INDONESIA.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../assets/js/script.js"></script>
+</body>
+</html>

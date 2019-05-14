@@ -1,0 +1,102 @@
+#home_viewarticle{
+	.content{
+		.container-fluid{
+			padding: 60px 0;
+			background: url( "../img/article-background.jpg" );
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			@media screen and (min-width: @sm){
+				padding-top:60px;
+			}
+			.neu-col-article{
+				padding: 10px 20px;
+				background-color:white;
+				text-align: center;
+				border: 2px solid black;
+				.neu-article-title{
+					text-transform: uppercase;
+					font-family: 'futurastd-bold', sans-serif;
+					// @media screen and (min-width: @sm){
+						padding-bottom: 30px;
+					// }
+				}
+				.neu-article-author{
+					text-transform: uppercase;
+					font-family: 'futurastd-book', sans-serif;
+				}
+				.neu-article-date{
+					text-transform: uppercase;
+					padding: 5px 5px 20px 5px;
+					font-family: 'futurastd-book', sans-serif;
+					color: red;
+				}
+				
+				.transparent{
+					margin-top: 12px 0px;
+					span{
+						color:transparent; 
+						border-top: 2px solid black;
+					}
+				}
+				p{
+					font-family: 'futurastd-book', sans-serif;
+					text-align: justify;
+					@media screen and (min-width: @sm){
+						padding-top:10px;
+						padding-bottom: 10px;
+					}
+				}
+				.quote{
+					font-family: 'futurastd-heavy', sans-serif;
+					background-image: url("../img/landing/sliderSubBg1.png"),url("../img/landing/sliderSubBg2.png");
+					background-repeat: no-repeat;
+					background-position: left top, right bottom;  
+					padding: 5px;
+					margin: 0 auto;
+					font-size: 16px;
+					max-width: 400px;
+					@media screen and (min-width: @sm){
+						font-size: 32px;
+					}
+				}
+
+				@media screen and (min-width: @sm){
+					padding: 70px 100px 70px 100px;
+				}
+			}
+			.neu-other-article{
+				padding-bottom:40px;
+				font-family: 'futurastd-book', sans-serif;
+				@media screen and (min-width: @sm){
+					padding-bottom: 80px;
+				}
+				a{
+					text-decoration: none;
+				}
+			}
+			.other-article-thumb{
+				width: 100%;
+			}
+			.section-other-article{
+				font-family: 'futurastd-heavy', sans-serif;
+				padding-bottom: 40px;
+			}
+			.other-article-title{
+				color: #ff0500;
+			}
+			.other-article-content{
+				color: #333;
+			}
+			.neu-article-social-media{
+				@media screen and (min-width: @sm){
+					float:right;
+				}
+			}
+		}
+	}
+	.footer{
+		#homepage_branded > .footer;
+		
+	}
+}

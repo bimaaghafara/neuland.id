@@ -1,0 +1,206 @@
+#neuland-page{
+	background-color: black;
+	.article-div{
+		width: 100%;
+		height: 330px;
+		
+		.article-left{
+			display: table;
+			height: inherit;
+			background-size: cover;
+		}
+		.article-right{
+			display: table;
+			height: inherit;
+			background-size: cover;
+		}
+		.article-text{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			color: white;
+			text-transform: uppercase;
+			font-family: 'futurastd-heavy', sans-serif;
+			letter-spacing: 2px;
+			h3{
+				font-size: 1.3em;
+				margin-top: 0px;
+				margin-bottom: 5px;
+			}
+			p{
+				font-size: 0.7em;
+				margin: 0px;
+			}
+		}
+		a{
+			&.btn-neu-readmore{
+				position: absolute;
+				bottom: 10%;
+				left: 50%;
+				transform: translate(-50%,0%);
+				border-radius: 0;
+				color: #fff;
+				border: 2px solid #b50708;
+				background-color: transparent;
+				padding:0;
+				width: 80%;
+				max-width: 130px;
+				font-family: 'futurastd-bold', Arial, sans-serif;
+				font-size: 1rem;
+				text-transform: uppercase;
+				.left{
+					width: 80%;
+					float: left;
+					padding: 8px 14px;
+				}
+				.right{
+					width:20%;
+					float:right;
+					padding:8px;
+					color: #ebebeb;
+					background-color: #b50708;
+				}
+			}
+		}
+	}
+	.article-div-desktop{
+		text-align: center;
+		background-image: url('../img/neuland/desktop_neuland_page.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		.recent-articles{
+			padding-top: 5vw;
+			span{
+				color: black;
+				font-family: 'futurastd-bold', Arial, sans-serif;
+				font-size: 2vw;
+				padding: 0.5vw 2vw;;
+				background-image: url('../img/quotation-1.png'), url('../img/quotation-2.png');
+				background-repeat: no-repeat, no-repeat;
+				background-position: top left, bottom right;
+			}
+		}
+		.article-first{
+			margin: 4.5vw 1.5vw 8vw 1.5vw;
+			display: inline-block;
+			background-image: url('../img/neuland/article-1.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			width: 23vw;
+			height: 33.5vw;
+			position: relative;
+			&:hover{
+				outline: 0.2vw solid black;
+				.plus{
+					visibility: visible;
+				}
+			}
+			.plus{
+				position: absolute;
+				top: 0.5vw;    
+				left: 1.5vw;
+				color: #a7060b;
+				font-size: 3.5vw;
+				visibility: hidden;
+			}
+			.date{
+				position: absolute;
+				top:0%;    
+				right:0%;
+				padding: 5px;
+				background-color: #a7060b;
+				font-family: 'futurastd-heavy', sans-serif;
+				font-size: 1vw;
+				color: white;
+			}
+			.article-text{
+				position: absolute;
+				top:50%;    
+				left:50%;
+				transform: translate(-50%,-50%);
+				width:100%;
+				text-align: center;
+				color: white;
+				text-transform: uppercase;
+				font-family: 'futurastd-heavy', sans-serif;
+				letter-spacing: 2px;
+				h3{
+					font-size: 1.5vw;
+					margin-top: 0px;
+					margin-bottom: 5px;
+				}
+				p{
+					font-size: 0.9vw;
+					margin: 0px;
+				}
+			}
+			a{
+				&.btn-neu-readmore{
+					position: absolute;
+					bottom: 22%;
+					left: 50%;
+					transform: translate(-50%,0%);
+					border-radius: 0;
+					color: #fff;
+					border: 2px solid #b50708;
+					background-color: transparent;
+					padding:0;
+					width: 50%;
+					font-family: 'futurastd-bold', Arial, sans-serif;
+					font-size: 1vw;
+					text-transform: uppercase;
+					.left{
+						width: 80%;
+						float: left;
+						padding: 8px 14px;
+					}
+					.right{
+						width:20%;
+						float:right;
+						padding:8px;
+						color: #ebebeb;
+						background-color: #b50708;
+					}
+				}
+			}	
+		}
+		.article-second{
+			.article-first;
+			background-image: url('../img/neuland/article-2.png');	
+		}
+		.article-third{
+			.article-first;
+			background-image: url('../img/neuland/article-3.png');	
+		}
+	}
+	.neu-video-wrapper{
+		margin-bottom:-5px;
+	}
+
+	.load-more{
+		height: 180px;
+		width: 100%;
+		display: table;
+		background-image: url("../img/neuland/load_more_image.png");
+		background-size: cover;
+		
+		div{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			.btn-load-more{
+				border-radius: 0;
+				background-color: #e20000;
+				width: 50%;
+				color: #fff;
+				font-size: 1.5rem;
+				font-family: 'futurastd-bold', sans-serif;
+				text-transform: uppercase;
+				border: 2px solid #e20000;
+				padding: 15px;
+			}
+		}
+	}
+}

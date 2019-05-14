@@ -1,0 +1,143 @@
+/**
+ * Header 
+ **/
+.header {
+	margin-top: 0px;
+	margin-bottom: 57px;
+	.navbar {
+		border-radius: 0;
+		top:0; 
+		position:fixed; 
+		width:100%; 
+		z-index:100;
+		background-color: #1a191a;
+		// background-color: @color-black;
+	  	.navbar-header {
+
+	    	.navbar-brand {
+	    		color: @color-white;
+	    		float: none; 
+	    		// text-align: center;
+	    		font-family: 'futuramedium-condesed', sans-serif;
+	    		font-size: 2.4rem;
+	    		position: relative;
+			    width: 70%;
+			    left: 0;
+			    top: 0;
+			    text-align: center;
+			    margin: 8px auto;
+			  	height: 100%;
+			  	letter-spacing: 1.5px;
+			  	padding: 10px 10px;
+			  	display: block;
+
+			  	@media screen and (min-width: @sm) and (max-width: @md) {
+			  		// top: 13px;
+			  		// left: 5px;
+			  	}
+				
+				&.brand-desktop{
+					@media screen and (min-width: @sm) {
+				  		width: 100%;
+					    padding: 5px 0 5px 45px;
+					    background: transparent url(../img/home/headerLogo.png) no-repeat;
+					    background-size: 25%;
+					    background-position: 0 4px;
+					    margin-left:15px;
+				  	}
+				}
+			  	
+	    	}
+	    	.navbar-toggle {
+				margin-right: 5px;
+				z-index: 1;
+				padding:7px 10px;
+	    		span {
+					background-color: @color-white;
+					height: 4px;
+					&.icon-bar{
+						width:30px;
+						border-radius: 0px;
+						&:nth-child(2) {
+							width: 70%;
+							margin-left: 9px;
+							margin-top: 6px;
+						}
+						&:nth-child(3){
+							margin-top: 6px;
+						}
+					}
+
+				}
+	   		}
+	   		.neu-header-logo{
+	   			float: left;
+	   			padding-top: 10px; 
+	   			padding-left: 15px;
+	   			@media screen and (min-width: @sm){
+	   				padding-top: 8px;
+	   			}
+	   		}
+	  	}
+	  	.navbar-nav {
+			font-family: 'futurastd-medium', sans-serif;
+			letter-spacing: 2px;
+			@media screen and (min-width:768px) {
+				float: right;
+			}
+	  		background-color: #1a191a;
+			li {
+				a {
+					font-weight: bold;
+					font-size: 0.9em;
+					text-transform: uppercase;
+					color: @color-white;
+					transition: all 100ms linear;
+					&.active, 
+					&:hover {
+						background-color: darkgrey;
+					}
+				}
+			}
+			.dropdown-menu{
+				background-color: transparent;
+
+				@media screen and (min-width:768px) {
+					background-color: #444;
+					border-radius: 0;
+					border: none;
+					//box-shadow: none;
+				}
+
+
+			}
+			
+		}
+	}
+
+
+
+	.nav li.open > a {
+		background: #333;
+		border: none;
+	}
+
+	.navbar-nav.nav li li a {
+		color: white;
+		background: #444;
+
+		@media (min-width: @md) {
+			padding-top: 0.6em;
+			padding-bottom: 0.6em;
+			padding-right: 4.4em;
+		}
+
+
+
+
+	}
+}
+@media (min-width: @sm) {
+	.header{margin-bottom: 0 !important;}
+
+}
